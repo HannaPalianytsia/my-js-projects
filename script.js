@@ -8,7 +8,8 @@ panels.forEach((panel) => {
 });
 
 function removeActiveClasses() {
-  panels.forEach((panel) => {
-    panel.classList.remove("active");
-  });
+  const activePanel = document.querySelector(".panel.active");
+  if (activePanel) {
+    activePanel.classList.remove("active");
+  }
 }

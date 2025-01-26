@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 :root {
-  --left-bg-color: rgba(87, 84, 236, 0.7);
-  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --bg-color: rgba(43, 43, 43, 0.8);
+  --hover-bg-color: rgba(43, 43, 43, 0.4);
+  --btn-hover-color: rgba(43, 43, 43, 1);
+  --btn-bg-color: rgba(0, 0, 0, 0.2);
+  --text-color: rgb(210, 203, 203);
+  --hover-width: 75%;
+  --other-width: 25%;
 }
 
 * {
@@ -18,18 +23,37 @@ body {
 
 h2 {
   font-size: 4rem;
-  color: #fff;
+  color: var(--text-color);
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: 3%;
+  margin: 0;
   transform: translateX(-50%);
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: var(--text-color);
+  text-transform: uppercase;
+  background-color: var(--btn-bg-color);
+  padding: 16px;
+}
+
+.split.left .btn:hover,
+.split.left .btn:focus,
+.split.right .btn:hover,
+.split.right .btn:focus {
+  background-color: var(--btn-hover-color);
 }
 
 .container {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #333;
 }
 
 .split {
@@ -51,7 +75,7 @@ h2 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--left-bg-color);
+  background-color: var(--bg-color);
 }
 
 .split.right {
@@ -66,5 +90,25 @@ h2 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--right-bg-color);
+  background-color: var(--bg-color);
+}
+.split.left,
+.split.left::before,
+.split.right,
+.split.right::before {
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-left .left,
+.hover-right .right {
+  width: var(--hover-width);
+}
+.hover-left .right,
+.hover-right .left {
+  width: var(--other-width);
+}
+
+.hover-left .split.left::before,
+.hover-right .split.right::before {
+  background-color: var(--hover-bg-color);
 }

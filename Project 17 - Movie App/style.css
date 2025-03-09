@@ -43,6 +43,7 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .movie {
@@ -70,6 +71,7 @@ main {
 
 .movie-info h3 {
   margin-top: 0;
+  max-width: 224px;
 }
 
 .movie-info span {

@@ -1,8 +1,8 @@
-const hour = document.querySelector(".hour");
-const minute = document.querySelector(".minute");
-const second = document.querySelector(".second");
-const time = document.querySelector(".time");
-const date = document.querySelector(".date");
+const hourEl = document.querySelector(".hour");
+const minuteEl = document.querySelector(".minute");
+const secondEl = document.querySelector(".second");
+const timeEl = document.querySelector(".time");
+const dateEl = document.querySelector(".date");
 const toggle = document.querySelector(".toggle");
 
 const days = [
@@ -40,3 +40,31 @@ toggle.addEventListener("click", (e) => {
     e.target.innerHTML = "Light mode";
   }
 });
+
+function setTime() {
+  const time = new Date();
+  const month = time.getMonth();
+  const day = time.getDay();
+  const date = time.getDate();
+  const hours = time.getHours();
+  const hoursForClock = hours % 12;
+  const minutes = time.getMinutes();
+  const seconds = time.getSeconds();
+
+  hourEl.style.transform = `translate(-50%, -100%) rotate(${
+    (360 * hours) / 12
+  }deg)`;
+  minuteEl.style.transform = `translate(-50%, -100%) rotate(${
+    (360 * minutes) / 60
+  }deg)`;
+  secondEl.style.transform = `translate(-50%, -100%) rotate(${
+    (360 * seconds) / 60
+  }deg)`;
+
+  timeEl.innerHTML = `${hours}:${minutes < 10 ? `0${minutes}` : minutes}`;
+  dateEl.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`;
+}
+
+setTime();
+
+setInterval(setTime, 1000);

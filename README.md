@@ -1,7 +1,7 @@
 Sample project website links:
 
-https://hannapalianytsia.github.io/my-js-projects/Project%2020%20-%20Theme%20Clock/
+[Project 20 - Theme Clock](https://hannapalianytsia.github.io/my-js-projects/Project%2020%20-%20Theme%20Clock/)
 
-![Clock](image.png)
+<img src="image.png" alt="Clock" width="200"/>
 
 https://hannapalianytsia.github.io/my-js-projects/Project%2004%20-%20Hidden%20Search%20Widget/

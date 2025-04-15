@@ -29,7 +29,7 @@ function changeSlide(moveSlide) {
   leftSlide.style.transform = `translateY(${
     activeSlideIndex * sliderHeight
   }px)`;
-
-  // leftSlide.style.top = `-${(slidesLength - 1 - activeSlideIndex) * 100}%`;
-  // rightSlide.style.top = `-${activeSlideIndex * 100}%`;
 }
+
+// leftSlide.style.top = `-${(slidesLength - 1 - activeSlideIndex) * 100}%`;
+// rightSlide.style.top = `-${activeSlideIndex * 100}%`;

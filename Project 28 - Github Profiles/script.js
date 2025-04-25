@@ -4,6 +4,16 @@ const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const user = search.value;
+
+  if (user) {
+    getUser(user);
+    search.value = "";
+  }
+});
+
 getUser("hannapalianytsia");
 
 async function getUser(username) {
@@ -11,7 +21,9 @@ async function getUser(username) {
     const { data } = await axios(API_URL + username);
     createUserCard(data);
   } catch (error) {
-    console.log(error);
+    if (error.response.status === 404) {
+      createErrorCard("No profile with this username");
+    }
   }
 }
 
@@ -48,15 +60,12 @@ function createUserCard(user) {
   main.innerHTML = cardHTML;
 }
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const user = search.value;
-
-  if (user) {
-    getUser(user);
-    search.value = "";
-  }
-});
+function createErrorCard(msg) {
+  const cardHTML = `<div class="card">
+  <h2>${msg}</h2>
+  <div>`;
+  main.innerHTML = cardHTML;
+}
 
 /*
 

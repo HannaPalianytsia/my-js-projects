@@ -30,6 +30,24 @@ generateEl.addEventListener("click", () => {
   );
 });
 
+clipboardEl.addEventListener("click", () => {
+  const password = resultEl.innerText;
+
+  if (!password) {
+    alert("No password to copy!");
+    return;
+  }
+
+  navigator.clipboard
+    .writeText(password)
+    .then(() => {
+      alert("Password copied to clipboard!");
+    })
+    .catch((err) => {
+      alert("Failed to copy: ", err);
+    });
+});
+
 function generatePassword(lower, upper, number, symbol, length) {
   let generatedPassword = "";
   const typesCount = lower + upper + number + symbol;

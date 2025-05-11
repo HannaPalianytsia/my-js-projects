@@ -33,31 +33,9 @@ body {
   color: lightblue;
 }
 
-.btn {
-  cursor: pointer;
-  display: inline-block;
-  width: 100%;
-  background-color: lightblue;
-  padding: 15px;
-  font-family: inherit;
-  font-size: 16px;
-  border: 0;
-  border-radius: 5px;
-}
-.btn:focus {
-  outline: 1px #fff solid;
-}
-.btn:active {
-  transform: scale(0.96);
-}
-
-.text {
-  margin-top: 30px;
-}
-
 .form-control {
   position: relative;
-  margin: 20px 0px 40px;
+  margin: 20px 0 40px;
   width: 300px;
 }
 
@@ -75,10 +53,46 @@ body {
 .form-control input:focus,
 .form-control input:valid {
   outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: lightblue;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+}
+.btn:focus {
+  outline: 1px #fff solid;
+}
+.btn:active {
+  transform: scale(0.96);
+}
+
+.text {
+  margin-top: 30px;
 }
 
 .form-control label {
   position: absolute;
   top: 15px;
   left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.7, -0.6, 0.3, -1.5);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
 }

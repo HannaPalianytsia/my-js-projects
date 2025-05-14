@@ -22,4 +22,4 @@ Sample project website links:
 
 [Project 31 - Password Generator](https://hannapalianytsia.github.io/my-js-projects/Project%2031%20-%20Password%20Generator/)
 
-https://hannapalianytsia.github.io/my-js-projects/Project%2032%20-%20Good&Cheap&Fast%20Checkboxes/
+[Project 33 - Notes App](https://hannapalianytsia.github.io/my-js-projects/Project%2033%20-%20Notes%20App/)

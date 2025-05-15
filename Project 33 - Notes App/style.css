@@ -31,16 +31,16 @@ body {
 .note {
   background-color: #fff;
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
-  margin: 30px 20px;
-  height: 400px;
-  width: 400px;
+  margin: 16px 10px;
+  height: 200px;
+  width: 200px;
 }
 
 .note .tools {
   background-color: #9ec862;
   display: flex;
   justify-content: flex-end;
-  padding: 0.5rem;
+  padding: 0.2rem;
 }
 
 .note .tools button {
@@ -48,18 +48,19 @@ body {
   border: none;
   color: #fff;
   cursor: pointer;
-  font-size: 1rem;
-  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
 }
 
 .note textarea {
   outline: none;
   font-family: inherit;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   border: none;
-  height: 400px;
+  height: 200px;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
+  resize: none;
 }
 
 .hidden {

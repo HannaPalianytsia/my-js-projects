@@ -21,7 +21,7 @@ function addNewNote(text = "") {
   const textarea = note.querySelector("textarea");
 
   textarea.value = text;
-  main.innerHTML = text;
+  main.innerHTML = marked(text);
 
   deleteBtn.addEventListener("click", () => note.remove());
 
@@ -29,6 +29,11 @@ function addNewNote(text = "") {
     main.classList.toggle("hidden");
     textarea.classList.toggle("hidden");
   });
+
+  textarea.addEventListener(
+    "input",
+    (e) => (main.innerHTML = marked(e.target.value))
+  );
 
   document.body.appendChild(note);
 }

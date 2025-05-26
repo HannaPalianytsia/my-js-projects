@@ -30,5 +30,7 @@ function addNewNote(text = "") {
     textarea.classList.toggle("hidden");
   });
 
+  textarea.addEventListener("input", (e) => (main.innerHTML = e.target.value));
+
   document.body.appendChild(note);
 }

@@ -91,4 +91,4 @@ Sample project website links:
 
 [Project 33 - Notes App](https://hannapalianytsia.github.io/my-js-projects/Project%2033%20-%20Notes%20App/)
 
-[Project 34 - Animated Countdown](
+[Project 34 - Animated Countdown](https://hannapalianytsia.github.io/my-js-projects/Project%2034%20-%20Animated%20Countdown/)

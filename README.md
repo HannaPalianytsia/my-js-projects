@@ -90,3 +90,5 @@ Sample project website links:
 [Project 32 - Good&Cheap&Fast Checkboxes](https://hannapalianytsia.github.io/my-js-projects/Project%2032%20-%20Good&Cheap&Fast%20Checkboxes/)
 
 [Project 33 - Notes App](https://hannapalianytsia.github.io/my-js-projects/Project%2033%20-%20Notes%20App/)
+
+[Project 34 - Animated Countdown](

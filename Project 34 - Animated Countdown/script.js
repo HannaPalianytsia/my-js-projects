@@ -5,6 +5,11 @@ const replay = document.getElementById("replay");
 
 runAnimatiom();
 
+replay.addEventListener("click", () => {
+  resetDOM();
+  runAnimatiom();
+});
+
 function runAnimatiom() {
   nums.forEach((num, idx) => {
     const nextToLast = nums.length - 1;
@@ -21,4 +26,15 @@ function runAnimatiom() {
       }
     });
   });
+}
+
+function resetDOM() {
+  counter.classList.remove("hide");
+  finalMessage.classList.remove("show");
+
+  nums.forEach((num) => {
+    num.classList.value = "";
+  });
+
+  nums[0].classList.add("in");
 }

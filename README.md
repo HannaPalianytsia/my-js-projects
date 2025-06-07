@@ -92,3 +92,7 @@ Sample project website links:
 [Project 33 - Notes App](https://hannapalianytsia.github.io/my-js-projects/Project%2033%20-%20Notes%20App/)
 
 [Project 34 - Animated Countdown](https://hannapalianytsia.github.io/my-js-projects/Project%2034%20-%20Animated%20Countdown/)
+
+[Project 35 - Image Carousel](https://hannapalianytsia.github.io/my-js-projects/Project%2035%20-%20Image%20Carousel/)
+
+[Project 36 - Hoverboard](https://hannapalianytsia.github.io/my-js-projects/Project%2036%20-%20Hoverboard/)

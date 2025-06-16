@@ -96,3 +96,5 @@ Sample project website links:
 [Project 35 - Image Carousel](https://hannapalianytsia.github.io/my-js-projects/Project%2035%20-%20Image%20Carousel/)
 
 [Project 36 - Hoverboard](https://hannapalianytsia.github.io/my-js-projects/Project%2036%20-%20Hoverboard/)
+
+[Project 37 - Pokemon Cards](https://hannapalianytsia.github.io/my-js-projects/Project%2037%20-%20Pokemon%20Cards/)

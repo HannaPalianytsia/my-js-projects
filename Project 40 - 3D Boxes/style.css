@@ -41,3 +41,26 @@ body {
   box-shadow: none;
   transform: translate(3px, 2px);
 }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 500px;
+  width: 500px;
+  position: relative;
+}
+
+.boxes.big {
+  width: 600px;
+  height: 600px;
+}
+
+.box {
+  background-image: url("https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  position: relative;
+  height: 125px;
+  width: 125px;
+}

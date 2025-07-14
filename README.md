@@ -102,3 +102,5 @@ Sample project website links:
 [Project 38 - Mobile Tab Navigation](https://hannapalianytsia.github.io/my-js-projects/Project%2038%20-%20Mobile%20Tab%20Navigation)
 
 [Project 39 - Password Strength Background](https://hannapalianytsia.github.io/my-js-projects/Project%2039%20-%20Password%20Strength%20Background/)
+
+[Project 40 - 3D Boxes](https://hannapalianytsia.github.io/my-js-projects/Project%2040%20-%203D%20Boxes/)
